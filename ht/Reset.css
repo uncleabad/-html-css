@@ -1,0 +1,110 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6em 0;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    z-index: 1;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    z-index: 1;
+    position: relative;
+}
+
+.hero .btn {
+    background: #FFC107;
+    color: #333;
+    padding: 0.75em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.hero .btn:hover {
+    background: #FF9800;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap
+}
